@@ -14,3 +14,17 @@ if __name__ == '__main__':
 
 ```
 
+```
+python server.py
+python train.py
+
+ curl -X POST -H "Content-Type:application/json" --data '{"sepal_length": 5.9, "sepal_width": 3.0, "petal_length": 5.1, "petal_width": 1.8}' http://localhost:5000/predict
+
+ # output
+ {
+  "result": [
+    2
+  ]
+}
+
+```
